@@ -1,0 +1,40 @@
+/*发表盒子*/
+.box_c { border: #ccc 1px dashed; text-align: center; padding: 5px 0; margin-right: 30px;color: #999;}
+.box_c span { margin: 0 10px; }
+.box_c span a{color: #099;}
+/*标签*/
+.keybq {margin-top:30px; background: url(../images/6264.png) no-repeat 10px center #F8F8F8; line-height: 30px; height: 30px; padding-left: 40px; border: 1px solid #F0F0F0; margin-right: 20px; }
+.keybq span { color: #099 }
+
+.ad { width: 100%; margin: 10px auto; }
+.nextinfo { line-height: 24px;margin-top:30px; }
+.otherlink h2 {  line-height: 40px; font-size: 18px; font-weight: normal; margin-right: 20px; background:url(../images/5794.png) 10px center no-repeat; padding-left:40px}
+.otherlink ul { margin: 10px 0 }
+.otherlink li { line-height: 24px; height: 24px; display: block; width: 290px; float: left; overflow: hidden; margin-right: 30px; }
+.otherlink li a:hover{ text-decoration:underline}
+
+/*评论*/
+.description{position:relative;padding-right:6px;margin:10px 0}
+.area{overflow:auto;padding:10px;width:100%;height:100px;border:0;background:#f8f8f8;word-break:break-all;resize:none;font-size:14px;margin-top:20px;}
+.placeholder{position:absolute;left:10px;top:10px;width:200px;color:#999;cursor:text;font-size:14px;text-align:left}
+.operation{text-align:right;}
+.error-message{margin-right:5px;height:24px;line-height:24px;*line-height:24px;color:#E24C37;text-align:right}
+.vcode{margin-top:3px;*margin-top:1px}
+.verify-body1{padding:0;text-align:right}
+.input-code{height:16px;line-height:16px;border:1px solid #C6C6C6;background-color:#fff;vertical-align:middle}
+.btn-comment{display:inline-block;color:#FFF;font-family:"Microsoft Yahei";text-align:center;border:1px solid #FF8151;padding:8px 20px;background-color:#FF8151;}
+.btn-comment:hover,.module-comment .btn-comment:active{text-decoration:none;color:#000}
+.total{padding:5px 0;border-bottom:1px #F0F0F0 solid;color:#666}
+
+.item{padding:15px 0 10px;border-bottom:1px #F0F0F0 solid}
+.item-info{margin-left:70px;line-height:1.8;margin-top:-50px;}
+.detail{word-wrap:break-word;word-break:break-all}
+.foot{margin-top:15px}
+.time{color:#999}
+.reply{float:right;}
+
+
+
+
+
+

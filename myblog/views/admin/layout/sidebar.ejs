@@ -1,0 +1,58 @@
+<aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p><%=adminuser%></p>
+
+              <a href="/admin/logout"><i class="fa fa-circle text-success"></i>退出</a>
+            </div>
+          </div>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">主导航</li>
+            <li class="active treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>用户信息管理</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active"><a href="/admin/users"><i class="fa fa-circle-o"></i> 管理用户信息</a></li>
+				<li class="active"><a href="/admin/users/add"><i class="fa fa-circle-o"></i> 添加用户</a></li>
+              
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>博客标签管理</span>
+                
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/tag"><i class="fa fa-circle-o"></i> 浏览标签信息</a></li>
+                <li><a href="/admin/tag/add"><i class="fa fa-circle-o"></i> 添加标签信息</a></li>
+                
+              </ul>
+            </li>
+           
+		   <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>博客文章信息管理</span>
+               
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/article"><i class="fa fa-circle-o"></i> 浏览文章</a></li>
+                <li><a href="/admin/article/add"><i class="fa fa-circle-o"></i> 添加文章</a></li>
+                <li><a href="/admin/article/comment"><i class="fa fa-circle-o"></i>浏览文章评论信息</a></li>
+				
+              </ul>
+            </li>
+          </ul>
+        </section>
+		
+        <!-- /.sidebar -->
+      </aside>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/index.css" rel="stylesheet">
+	<link href="css/list.css" rel="stylesheet">
+    <title>列表页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	    <style>
+	    body{background:url("images/bg.jpg") repeat-y 0px 0px;padding-top: 70px;
+		}
+		ul { list-style: none; }
+	</style>
+  </head>
+  <body>
+  
+       <!-- Static navbar -->
+       <% include ./header%>
+	
+	
+     <!--图片-->
+ 
+	 <!--文章-->
+	<div class="container" >
+        <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-8">
+		        <div class="topnews">
+      <h2><b><a href="./index" style="color:#000">首页</a>&nbsp&nbsp>&nbsp&nbsp<a  href="./slowlist" style="color:#000">慢</b>生活</a></h2>
+        
+	 <% list.forEach(function(acticle){%>
+	  <div class="blogs">
+	      <input type="hidden" name="a_id" value="<%=acticle.a_id%>"/>
+		 <figure><img src="images/02.jpg"></figure>
+        <ul>
+		  <h3><a href="./content?a_id=<%=acticle.a_id%>"><%=acticle.title%></a></h3>
+          <p><%=acticle.intro%></p>
+          <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span class="dtime f_l">2016-12-06</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+        </ul>
+        
+      </div>
+	  <%})%>
+      <div class="blogs">
+        <figure><img src="images/01.jpg"></figure>
+        <ul>
+          <h3><a href="/">教你怎样用欠费手机拨打电话</a></h3>
+          <p>初次相识的喜悦，让你觉得似乎找到了知音。于是，对于投缘的人，开始了较频繁的交往。渐渐地，初识的喜悦退尽，接下来就是仅仅保持着联系，平淡到偶尔在节假曰发短信互致问候...</p>
+          <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span class="dtime f_l">2016-12-06</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+        </ul>
+      </div>
+      <div class="blogs">
+        <figure><img src="images/03.jpg"></figure>
+        <ul>
+          <h3><a href="/">原来以为，一个人的勇敢是，删掉他的手机号码...</a></h3>
+          <p>原来以为，一个人的勇敢是，删掉他的手机号码、QQ号码等等一切，努力和他保持距离。等着有一天，习惯不想念他，习惯他不在身边,习惯时间把他在我记忆里的身影磨蚀干净... </p>
+          <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span class="dtime f_l">2016-12-06</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+        </ul>
+      </div>
+      <div class="blogs">
+        <figure><img src="images/04.jpg"></figure>
+        <ul>
+          <h3><a href="/">手机的16个惊人小秘密，据说99.999%的人都不知</a></h3>
+          <p>引导语：知道么，手机有备用电池，手机拨号码12593+电话号码=陷阱……手机具有很多你不知道的小秘密，说出来一定很惊奇！不信的话就来看看吧！...</p>
+          <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span class="dtime f_l">2016-12-06</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+        </ul>
+      </div>
+      <div class="blogs">
+        <figure><img src="images/05.jpg"></figure>
+        <ul>
+          <h3><a href="/">你面对的是生活而不是手机</a></h3>
+          <p>每一次与别人吃饭，总会有人会拿出手机。以为他们在打电话或者有紧急的短信，但用余光瞟了一眼之后发现无非就两件事：1、看小说，2、上人人或者QQ...</p>
+          <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span class="dtime f_l">2016-12-06</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+        </ul>
+      </div>
+      
+ 
+	  
+	  <!--分页-->
+	  <nav style="text-align:center;">
+        <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+</nav>
+	  
+    </div>
+		   </div>
+		   
+		   <!--右半侧-->
+           <% include ./right%>
+		    
+        </div>
+    </div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
